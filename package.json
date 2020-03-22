@@ -1,0 +1,69 @@
+{
+  "name": "create-node-library",
+  "version": "0.0.1",
+  "description": "CLI for easily bootstrapping modern node packages",
+  "repository": "Rogger794/create-node-library",
+  "keywords": [
+    "node",
+    "library",
+    "module",
+    "create-node-library",
+    "cli",
+    "rollup",
+    "babel",
+    "publish"
+  ],
+  "bugs": {
+    "url": "https://github.com/Rogger794/create-node-library/issues"
+  },
+  "homepage": "https://github.com/Rogger794/create-node-library#readme",
+  "author": {
+    "name": "Rogger794",
+    "email": "rogger.valverde@uni.pe"
+  },
+  "main": "index.js",
+  "license": "MIT",
+  "reveal": true,
+  "bin": {
+    "create-node-library": "index.js"
+  },
+  "scripts": {
+    "cm": "git cz"
+  },
+  "engines": {
+    "node": ">=8",
+    "npm": ">=5"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
+    "@commitlint/travis-cli": "^8.3.5",
+    "babel-eslint": "^10.0.3",
+    "babel-jest": "^24.9.0",
+    "commitizen": "^4.0.3",
+    "cz-conventional-changelog": "^3.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-promise": "^4.2.1",
+    "husky": "^3.1.0",
+    "jest": "^24.9.0",
+    "markdownlint": "^0.18.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^1.19.1",
+    "rimraf": "^3.0.0"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
+}
