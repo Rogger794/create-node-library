@@ -1,0 +1,12 @@
+{
+  "name": "{{name}}-example",
+  "homepage": "https://{{author}}.github.io/{{name}}",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "{{name}}": "{{#if yarn}}link:..{{else}}file:..{{/if}}"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
