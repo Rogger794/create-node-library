@@ -1,6 +1,7 @@
+import babel from 'rollup-plugin-babel';
+import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import external from 'rollup-plugin-peer-deps-external';
-import resolve from '@rollup/plugin-node-resolve';
 
 import pkg from './package.json';
 
@@ -10,15 +11,20 @@ export default {
     {
       file: pkg.main,
       format: 'cjs',
-      exports: 'named',
       sourcemap: true,
     },
     {
       file: pkg.module,
       format: 'es',
-      exports: 'named',
       sourcemap: true,
     },
   ],
-  plugins: [external(), resolve(), commonjs()],
+  plugins: [
+    external(),
+    babel({
+      exclude: 'node_modules/**',
+    }),
+    resolve(),
+    commonjs(),
+  ],
 };

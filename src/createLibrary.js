@@ -48,14 +48,12 @@ export default async info => {
     ora.promise(promise, `Running ${manager} install and ${manager} link`);
     await promise;
   }
-  console.log('inicio5');
 
   if (git) {
     const promise = initGitRepo({ dest });
     ora.promise(promise, 'Initializing git repo');
     await promise;
   }
-  console.log('inicio6');
 
   return dest;
 };
@@ -73,7 +71,6 @@ const copyTemplateFile = async opts => {
     const content = fs.readFileSync(file);
     fs.writeFileSync(destFilePath, content);
   } else {
-    //console.log('info', info);
     const template = handlebars.compile(fs.readFileSync(file, 'utf8'));
     const content = template({
       ...info,
@@ -112,7 +109,6 @@ const initPackageManager = async opts => {
 };
 
 const initGitRepo = async opts => {
-  console.log('initGitRepo');
   const { dest } = opts;
 
   const gitIgnorePath = path.join(dest, '.gitignore');

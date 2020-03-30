@@ -65,7 +65,8 @@ export default async () => {
     } else if (program.args.length > 1) {
       console.error('invalid arguments');
       program.help();
-      process.exit(1);
+      throw new Error('invalid arguments');
+      //process.exit(1);
     }
 
     const params = await promptLibraryParams(opts);

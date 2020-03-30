@@ -33,7 +33,7 @@
     "build": "npm-run-all clean copy:templates build:rollup",
     "start": "npm-run-all clean copy:templates build:rollup:watch",
     "prepare": "yarn build",
-    "copy:templates": "cpy './template' './dist' --parents",
+    "copy:templates": "cpy './template' './dist' --parents --dot",
     "cm": "git cz"
   },
   "engines": {
