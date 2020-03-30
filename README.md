@@ -1,8 +1,8 @@
-# create-node-library
+# @node/create-library
 
 > CLI for creating reusable, modern Node libraries using Rollup.
 
-[![NPM](https://img.shields.io/npm/v/create-react-library.svg)](https://www.npmjs.com/package/create-node-library) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
 ## Features
 
@@ -22,13 +22,13 @@
 This package requires `node >= 5`, but we recommend `node >= 8`.
 
 ```bash
-npm install -g create-node-library
+npm install -g @node/create-library
 ```
 
 ## Usage with npx
 
 ```bash
-npx create-node-library
+npx @node/create-library
 ```
 
 _([npx](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b) comes with npm 5.2+ and higher, see [instructions for older npm versions](https://gist.github.com/gaearon/4064d3c23a77c74a3614c498a8bb1c5f))_
@@ -36,7 +36,7 @@ _([npx](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7
 ## Creating a New Module
 
 ```bash
-create-node-library
+@node/create-library
 ```
 
 Answer some basic prompts about your module, and then the CLI will perform the following steps:

@@ -1,5 +1,5 @@
 {
-  "name": "create-node-library",
+  "name": "@node/create-library",
   "version": "1.0.0",
   "description": "CLI for easily bootstrapping modern node packages",
   "repository": "Rogger794/create-node-library",
