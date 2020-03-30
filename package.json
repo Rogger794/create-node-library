@@ -1,6 +1,6 @@
 {
   "name": "create-node-library",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "CLI for easily bootstrapping modern node packages",
   "repository": "Rogger794/create-node-library",
   "keywords": [
