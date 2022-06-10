@@ -102,7 +102,7 @@
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-peer-deps-external": "^2.2.0",
     "rollup-plugin-url": "^3.0.1",
-    "semantic-release": "^17.0.4"
+    "semantic-release": "^19.0.3"
   },
   "release": {
     "plugins": [
